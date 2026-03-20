@@ -44,3 +44,41 @@ body{
     
 }
 
+#hint-pass{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding: 4px;
+    background-color: gray;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+
+
+#hint-box{
+    width: 250px;
+    height: 150px;
+    background-color: rgb(203, 203, 203);
+    border-style: solid;
+    border-color: rgb(143, 143, 143) rgb(143, 143, 143)  rgb(85, 85, 85) rgb(66, 66, 66);
+    margin-left: 65%;
+    margin-top: 10px;
+
+
+}
+.tab-bar{
+    height: fit-content;
+    background-color: rgb(249, 212, 0);
+    padding: 4px 7px;
+    font-size: 20px;
+
+
+}
+.hint-message{
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+   
+}
+
+
