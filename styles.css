@@ -1,6 +1,7 @@
 body{
     background-color: lightslategray;
     font-family: "pixel-desk";
+    overflow:hidden;
 }
 .background{
     /* if we choose to add a picture for the background, this can be uncommented */
