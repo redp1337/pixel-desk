@@ -1,0 +1,14 @@
+body{
+    background-color:lightslategray;
+    height: 100vh;
+    overflow: hidden;
+}
+.taskbar{
+    background-color: rgb(185, 185, 185);
+    height: 45px;
+    width:105%;
+    bottom:0;
+    position:fixed;
+    margin-left:-10px;
+
+}
