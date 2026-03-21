@@ -5,10 +5,22 @@ body{
 }
 .taskbar{
     background-color: rgb(185, 185, 185);
-    height: 45px;
-    width:105%;
+    height: 55px;
+    width:100%;
+    left:0;
     bottom:0;
     position:fixed;
     margin-left:-10px;
 
+}
+
+.icons-container-taskbar{
+    display: flex;
+    flex-direction: row;
+    height:65px;
+    margin-top: 0;
+    padding-top: 0;
+    position: absolute;
+    left: 10px;
+    top: -10px;
 }
