@@ -3,10 +3,17 @@ body{
     height: 100vh;
     overflow: hidden;
 }
+
+@font-face{
+    font-family: "pixel-desk";
+    src: url("fonts/slkscr.ttf");
+}
+
+/* styling for taskbar */
 .taskbar{
     background-color: rgb(185, 185, 185);
     height: 55px;
-    width:100%;
+    width:105%;
     left:0;
     bottom:0;
     position:fixed;
@@ -14,6 +21,7 @@ body{
 
 }
 
+/* styling for icons container on taskbar */
 .icons-container-taskbar{
     display: flex;
     flex-direction: row;
@@ -24,3 +32,18 @@ body{
     left: 10px;
     top: -10px;
 }
+
+/* styling for icons container on desktop screen */
+.icon-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.icon-title{
+    text-align: center;
+    width: 95px;
+    margin-top: -20px;
+    font-family:"pixel-desk";
+}
+
