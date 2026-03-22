@@ -103,3 +103,18 @@ textarea{
     height: 250px;
     font-family: "pixel-desk";
 }
+
+/* notepad save-button styling */
+#save-button{
+    margin-top: 10px;
+    float: right;
+    display: flex;
+    margin-right: 0;
+    font-family: "pixel-desk";
+    font-size: 15px;
+    cursor: pointer;
+}
+#save-button:hover{
+    background-color: orange;
+    border-width: 1px;
+}
