@@ -98,3 +98,36 @@ body{
     
 }
 
+/* music player controls */
+.controls{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.play,.stop,.next,.back{
+    border-style:solid;
+    border-width: 1px;
+    padding: 3px;
+    background-color: rgb(148, 148, 148);
+    cursor: pointer;
+    font-weight: bold;
+}
+.play:hover{
+    background-color:rgb(255, 255, 47);
+}
+.stop:hover{
+    background-color:rgb(255, 255, 47);
+}
+.next:hover{
+    background-color:rgb(0, 255, 30);
+}
+
+
+.back:hover{
+    background-color:rgb(255, 47, 47);
+}
+
