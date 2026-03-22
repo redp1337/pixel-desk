@@ -47,3 +47,54 @@ body{
     font-family:"pixel-desk";
 }
 
+/* styling for music player window */
+.window{
+    background-color:rgb(176, 176, 176);
+    box-shadow: 10px 10px;
+}
+#music-player-window{
+    width: 350px;
+    height: 200px;
+    font-family: "pixel-desk";
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
+}
+.window-bar{
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3px;
+    background-color: rgb(255, 255, 184);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+#close-window-button{
+    border-color: black;
+    border-style: solid;
+    border-width:1px;
+    background-color: rgb(185, 185, 185);
+}
+.screen-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#screen{
+    background-color: black;
+    color:rgb(0, 255, 30);
+    height: 100px;
+    width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
