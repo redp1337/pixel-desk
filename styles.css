@@ -2,6 +2,7 @@ body{
     background-color:lightslategray;
     height: 100vh;
     overflow: hidden;
+    font-family: "pixel-desk";
 }
 
 @font-face{
@@ -70,4 +71,32 @@ body{
     border-style: solid;
     border-width:1px;
     background-color: rgb(185, 185, 185);
+}
+
+#notes-folder-window{
+    position: absolute;
+    top: 30vh;
+    bottom: 30vh;
+    right: 5vw;
+    width: 600px;
+    height: 400px;
+}
+#notes-area-container{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(176, 176, 176);
+    display: flex;
+    justify-content: center;
+
+}
+
+#notes-area{
+    width: 550px;
+    height: 350px;
+    background-color: white;
+    border-color: black;
+    border-style:solid;
+    border-width: 1px;
+    overflow-y:scroll;
+    margin-top: 20px;
 }
