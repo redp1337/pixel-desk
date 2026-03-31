@@ -7,19 +7,28 @@
     </head>
     <body>
         <div class="background">
-            <div class="login-container">
+            <div class="desk">
                 <div class="cat"><img src="./img/cat.jpg" width ="230px" height ="240px"></div>
                 <div class="username"> CAT_OS User </div>
                 <div class="pass-container">
-                    <div class="pass-text">Password: </div>
                     <div id="pass"><input type="text" placeholder="Enter Password"></div>
+                    <!-- enter button here -->
                     <div id="hint-pass">?</div>
                 </div>
                 <div id="hint-box">
                     <div class="tab-bar">HINT</div>
                     <div class="hint-message">the king of all fruits</div>
                 </div>
+
+                <div id="error-box">
+                    <div id ="error-tab" class="tab-bar">ERROR</div>
+                    <div class="error-message">TRY AGAIN</div>
+                </div>
+                <input type="hidden" id="password" value="durian">
+            <input type="password" id="pass-input" value="" placeholder="Enter Password" onkeypress="checkPassword(event)"> 
+            </div>
             </div>
         </div>
+        <script src="script.js"></script>
     </body>
 </html>

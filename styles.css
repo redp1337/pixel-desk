@@ -82,4 +82,23 @@ body{
    
 }
 
+#error-box{
+    width: 250px;
+    height: 150px;
+    background-color: rgb(203, 203, 203);
+    border-style: solid;
+    border-color: rgb(143, 143, 143) rgb(143, 143, 143)  rgb(85, 85, 85) rgb(66, 66, 66);
+    position: absolute;
+    top: 30vh;
+} 
 
+.error-message{
+    text-align: center;
+    margin: 0;
+    font-size: 18px;
+   
+}
+
+#error-tab{
+    background-color:red;
+}
