@@ -82,23 +82,40 @@ body{
    
 }
 
-#error-box{
+#error-tab{
+    background-color:red;
+}
+
+#error-box{ 
     width: 250px;
     height: 150px;
     background-color: rgb(203, 203, 203);
     border-style: solid;
     border-color: rgb(143, 143, 143) rgb(143, 143, 143)  rgb(85, 85, 85) rgb(66, 66, 66);
     position: absolute;
-    top: 30vh;
+    top: 30vh; 
+    #error-box {
+    display: none;
+}
+
+@keyframes shake {
+    0% { transform: translateX(0); }
+    20% { transform: translateX(-8px); }
+    40% { transform: translateX(8px); }
+    60% { transform: translateX(-8px); }
+    80% { transform: translateX(8px); }
+    100% { transform: translateX(0); }
+}
+
+.shake {
+    animation: shake 0.4s;
+}
+    
 } 
 
 .error-message{
     text-align: center;
     margin: 0;
     font-size: 18px;
-   
 }
 
-#error-tab{
-    background-color:red;
-}
