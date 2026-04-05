@@ -94,8 +94,8 @@ body{
     border-color: rgb(143, 143, 143) rgb(143, 143, 143)  rgb(85, 85, 85) rgb(66, 66, 66);
     position: absolute;
     top: 30vh; 
-    #error-box {
     display: none;
+    animation: shake 0.4s;
 }
 
 @keyframes shake {
@@ -106,12 +106,6 @@ body{
     80% { transform: translateX(8px); }
     100% { transform: translateX(0); }
 }
-
-.shake {
-    animation: shake 0.4s;
-}
-    
-} 
 
 .error-message{
     text-align: center;
