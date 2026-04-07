@@ -2,8 +2,9 @@ document.addEventListener("DOMContentLoaded", () => {
     const passInput = document.getElementById("pass-input");
     const errorBox = document.getElementById("error-box");
 
-    // 🔒 Define your password here (obscured slightly)
-    const correctPassword = atob("bWFuZ28xMjM="); // "mango123" encoded in Base64
+    // 🔒 Define your password here (obscured slightly) 
+    const correctPassword= "36";//
+    
 
 function showError(message) {
     const errorBox = document.getElementById("error-box");
