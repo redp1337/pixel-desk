@@ -71,3 +71,13 @@ body{
     border-width:1px;
     background-color: rgb(185, 185, 185);
 }
+
+
+
+.taskbar-clock{
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-family: "pixel-desk";
+    font-size: 18px;
+}
