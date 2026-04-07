@@ -81,3 +81,20 @@ body{
     font-family: "pixel-desk";
     font-size: 18px;
 }
+
+
+.window{
+    position: absolute;
+    width: 400px;
+    height: 300px;
+    top: 100px;
+    left: 100px;
+    background-color: rgb(176, 176, 176);
+    box-shadow: 10px 10px black;
+    display: none;
+}
+
+.window-content{
+    padding: 10px;
+    font-family: "pixel-desk";
+}
