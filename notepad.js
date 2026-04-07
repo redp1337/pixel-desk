@@ -62,6 +62,8 @@ document.getElementById("save-button").addEventListener("click", () => {
     titleInput.value = "";
     bodyInput.value = "";
 
+    //checking if note made it to localStorage
+    console.log("Note saved to localStorage:", notes[notes.length - 1]);
     // updates the notes folder
     renderNotesFolder();
 });
