@@ -3,6 +3,7 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script src="music-player.js" defer></script>
         <script src="taskbar.js" defer></script>
         <script src="notepad.js" defer></script>
     </head>
@@ -35,6 +36,26 @@
                 <div class="icon-box">
                     <div id="recipe-book-icon"><img src="./img/recipe-book.png" width="115px" height="105px"></div>
                     <div class="icon-title">Recipe Book</div>
+                </div>
+            </div>
+
+            <!-- music player UI -->
+            <div id="music-player-window" class="window" style="width: 300px height: 250px">
+                <div class="window-bar">Music Player
+                    <div id="close-window-button">x</div>
+                </div>
+                
+                <div class="screen-container">
+                    <div id="screen" class="music-screen">
+                        <div id="song-title">placeholder</div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div id="play" class="play">play</div>
+                    <div id="stop" class="play">stop</div>
+                    <div id="next" class="next">next</div>
+                    <div id="back" class="back">back</div>
                 </div>
             </div>
 

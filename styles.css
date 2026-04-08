@@ -124,9 +124,21 @@ textarea{
     border-bottom: 1px solid black;
 }
 
+/* styling for music player window */
 .window{
     background-color:rgb(176, 176, 176);
     box-shadow: 10px 10px;
+}
+#music-player-window{
+    width: 350px;
+    height: 200px;
+    font-family: "pixel-desk";
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
 }
 
 .window-bar{
@@ -153,6 +165,56 @@ textarea{
     border-width:1px;
     background-color: rgb(185, 185, 185);
 }
+.screen-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#screen{
+    background-color: black;
+    color:rgb(0, 255, 30);
+    height: 100px;
+    width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+/* music player controls */
+.controls{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.play,.stop,.next,.back{
+    border-style:solid;
+    border-width: 1px;
+    padding: 3px;
+    background-color: rgb(148, 148, 148);
+    cursor: pointer;
+    font-weight: bold;
+}
+.play:hover{
+    background-color:rgb(255, 255, 47);
+}
+.stop:hover{
+    background-color:rgb(255, 255, 47);
+}
+.next:hover{
+    background-color:rgb(0, 255, 30);
+}
+
+
+.back:hover{
+    background-color:rgb(255, 47, 47);
+}
+
 /* clock styling */
 
 #clock{
