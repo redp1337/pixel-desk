@@ -22,7 +22,8 @@ input{
     bottom:0;
     position:fixed;
     margin-left:-10px;
-
+    display:flex;
+    align-items:center;
 }
 
 /* styling for icons container on taskbar */
@@ -152,6 +153,16 @@ textarea{
     border-width:1px;
     background-color: rgb(185, 185, 185);
 }
+/* clock styling */
+
+#clock{
+    font-family: 'pixel-desk';
+    font-size: 35px;
+    border-color:black;
+    border-width:1px;
+    border-style:solid;
+    margin-left:auto;
+    margin-right: 100px;
 
 #notes-folder-window{
     position: absolute;
