@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
         <script src="taskbar.js" defer></script>
+        <script src="notepad.js" defer></script>
     </head>
     <body>
         <div class="background">
@@ -37,6 +38,31 @@
                 </div>
             </div>
 
+            <!-- notes folder window -->
+            <div id="notes-folder-window" class="window">
+                <div class ="window-bar"> Notes Folder
+                    <div id="close-window-button">X</div>
+                </div>
+
+                <div id="notes-area-container">
+                    <div id="notes-area">
+                        <!-- populated dynamically by notepad.js -->
+                        </div>
+                    </div>
+            <!-- notepad window -->
+            <div id="notepad-window" class="window">
+                <div class="window-bar">Notepad
+                    <div id="close-window-button">x</div>
+                </div>
+                <div class="content-container">
+                    <div class="title-note-container">
+                        <div>title</div>
+                        <div id="title-note"><input type="text" placeholder="Enter a title for this note" style="width: 450px"></div>
+                    </div>
+                    <div id="content-note"><textarea placeholder="Start typing..."></textarea></div>
+                    <button id="save-button">Save</button>
+                </div>
+            </div>
         </div>
     </body>
 </html>
