@@ -123,6 +123,29 @@ textarea{
     border-bottom: 1px solid black;
 }
 
+.window{
+    background-color:rgb(176, 176, 176);
+    box-shadow: 10px 10px;
+}
+
+.window-bar{
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3px;
+    background-color: rgb(255, 255, 184);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+#close-window-button{
+    border-color: black;
+    border-style: solid;
+    border-width:1px;
+    background-color: rgb(185, 185, 185);
 #close-window-button{
     border-color: black;
     border-style: solid;
