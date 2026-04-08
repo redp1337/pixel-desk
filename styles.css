@@ -147,6 +147,11 @@ textarea{
     border-style: solid;
     border-width:1px;
     background-color: rgb(185, 185, 185);
+#close-window-button{
+    border-color: black;
+    border-style: solid;
+    border-width:1px;
+    background-color: rgb(185, 185, 185);
 }
 /* clock styling */
 
