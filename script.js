@@ -1,8 +1,17 @@
 const correctPass= "36"; // Set your password here
-function showError(message) {
-    const errorBox = document.getElementById("error-box");
-    
-    // Set the error message
+function enterPass() {
+    const userPassEntry= document.getElementById('pass').value;
+    if (correctPass === userPassEntry) { 
+        window.location.href='desktop.html'; // Redirect to desktop.html if password is correct 
+    } else {
+        document.getElementById('error').style.display = "flex"; // Show the error box 
+       }
+}
+
+funcition closeError() {
+    document.getElementById('error-box').style.display = "none"; // Hide the error box when close button is clicked 
+} 
+
     errorBox.textContent = message;
     errorBox.style.display = "block"; // Show the error box 
     
@@ -29,6 +38,3 @@ function showError(message) {
         }
     });
 });
-// need to add some fun animations and maybe a hint system for the password!
-// Also, consider adding a "Forgot Password?" link that gives a playful hint about the password, like "It's a sweet fruit!"
-//Add 3 second timer for the error box to disappear after showing the error message.
