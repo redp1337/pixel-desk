@@ -8,19 +8,10 @@ function enterPass() {
        }
 }
 
-funcition closeError() {
+function closeError() {
     document.getElementById('error-box').style.display = "none"; // Hide the error box when close button is clicked 
-} 
-
-    errorBox.textContent = message;
-    errorBox.style.display = "block"; // Show the error box 
-    
-    // hide the error box after 3 seconds
-    setTimeout(() => {
-        errorBox.style.display = "none"; // Hide the error box after 3 seconds
-    }, 3000);
 }
-    
+
     // Add shake animation
     errorBox.classList.add("shake");
     passInput.addEventListener("keydown", (event) => {
@@ -37,4 +28,4 @@ funcition closeError() {
             }
         }
     });
-});
+
