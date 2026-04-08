@@ -1,11 +1,4 @@
-document.addEventListener("DOMContentLoaded", () => {
-    const passInput = document.getElementById("pass-input");
-    const errorBox = document.getElementById("error-box");
-
-    // 🔒 Define your password here (obscured slightly) 
-    const correctPassword= "36";//
-    
-
+const correctPass= "36"; // Set your password here
 function showError(message) {
     const errorBox = document.getElementById("error-box");
     
