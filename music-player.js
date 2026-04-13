@@ -51,4 +51,4 @@ back_button.addEventListener("click", function(){
     songAudio.src=playlist[song_index].file;
     songAudio.play();
     currently_playing.textContent= playlist[song_index].name;
-})
+});
