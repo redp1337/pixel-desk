@@ -82,7 +82,7 @@ input{
     height: 400px;
     position: absolute;
     top: 5vh;
-    
+
 
 }
 .content-container{
@@ -159,6 +159,7 @@ textarea{
     border-style: solid;
     border-width:1px;
     background-color: rgb(185, 185, 185);
+}
 #close-window-button{
     border-color: black;
     border-style: solid;
@@ -225,7 +226,7 @@ textarea{
     border-style:solid;
     margin-left:auto;
     margin-right: 100px;
-
+}
 #notes-folder-window{
     position: absolute;
     top: 30vh;
@@ -270,7 +271,8 @@ textarea{
     align-self: start;
     font-size: 16px;
     letter-spacing: 0.1px;
-    margin-top: -15px; 
+    margin-top: -15px;
+} 
 /* notepad save-button styling */
 #save-button{
     margin-top: 10px;
