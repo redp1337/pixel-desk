@@ -118,3 +118,19 @@ textarea{
     background-color: orange;
     border-width: 1px;
 }
+
+/* notepad delete-button styling */
+.delete-note-bth{
+    font-family: "pixel-desk";
+    font-size: 12px;
+    cursor: pointer;
+    background-color: rgb(185, 185, 185);
+    border: 1px solid black;
+    padding: 2px 6px;
+}
+
+.delete-note-btn:hover{
+    background-color: orange;
+    border-width: 1px;
+}
+    
