@@ -120,7 +120,7 @@ textarea{
 }
 
 /* notepad delete-button styling */
-.delete-note-bth{
+.delete-note-btn{
     font-family: "pixel-desk";
     font-size: 12px;
     cursor: pointer;
