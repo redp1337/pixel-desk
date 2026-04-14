@@ -2,6 +2,7 @@ body{
     background-color:lightslategray;
     height: 100vh;
     overflow: hidden;
+    font-family: "pixel-desk";
     font-family:"pixel-desk";
 }
 
@@ -21,7 +22,8 @@ input{
     bottom:0;
     position:fixed;
     margin-left:-10px;
-
+    display:flex;
+    align-items:center;
 }
 
 /* styling for icons container on taskbar */
@@ -80,7 +82,7 @@ input{
     height: 400px;
     position: absolute;
     top: 5vh;
-    
+
 
 }
 .content-container{
@@ -104,6 +106,173 @@ textarea{
     font-family: "pixel-desk";
 }
 
+.window{
+    background-color:rgb(176, 176, 176);
+    box-shadow: 10px 10px;
+}
+
+.window-bar{
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3px;
+    background-color: rgb(255, 255, 184);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+/* styling for music player window */
+.window{
+    background-color:rgb(176, 176, 176);
+    box-shadow: 10px 10px;
+}
+#music-player-window{
+    width: 350px;
+    height: 200px;
+    font-family: "pixel-desk";
+    border-color: black;
+    border-width: 2px;
+    border-style: solid;
+    position: absolute;
+    right: 5vw;
+    top: 5vh;
+}
+
+.window-bar{
+    height: fit-content;
+    color: rgb(0, 0, 0);
+    font-weight: bold;
+    font-size: 20px;
+    padding: 3px;
+    background-color: rgb(255, 255, 184);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid black;
+}
+
+#close-window-button{
+    border-color: black;
+    border-style: solid;
+    border-width:1px;
+    background-color: rgb(185, 185, 185);
+}
+#close-window-button{
+    border-color: black;
+    border-style: solid;
+    border-width:1px;
+    background-color: rgb(185, 185, 185);
+}
+.screen-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#screen{
+    background-color: black;
+    color:rgb(0, 255, 30);
+    height: 100px;
+    width: 325px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    
+}
+
+/* music player controls */
+.controls{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+.play,.stop,.next,.back{
+    border-style:solid;
+    border-width: 1px;
+    padding: 3px;
+    background-color: rgb(148, 148, 148);
+    cursor: pointer;
+    font-weight: bold;
+}
+.play:hover{
+    background-color:rgb(255, 255, 47);
+}
+.stop:hover{
+    background-color:rgb(255, 255, 47);
+}
+.next:hover{
+    background-color:rgb(0, 255, 30);
+}
+
+
+.back:hover{
+    background-color:rgb(255, 47, 47);
+}
+
+/* clock styling */
+
+#clock{
+    font-family: 'pixel-desk';
+    font-size: 35px;
+    border-color:black;
+    border-width:1px;
+    border-style:solid;
+    margin-left:auto;
+    margin-right: 100px;
+}
+#notes-folder-window{
+    position: absolute;
+    top: 30vh;
+    bottom: 30vh;
+    right: 5vw;
+    width: 600px;
+    height: 400px;
+}
+#notes-area-container{
+    width: 600px;
+    height: 400px;
+    background-color: rgb(176, 176, 176);
+    display: flex;
+    justify-content: center;
+
+}
+
+#notes-area{
+    width: 550px;
+    height: 350px;
+    background-color: white;
+    border-color: black;
+    border-style:solid;
+    border-width: 1px;
+    overflow-y:scroll;
+    margin-top: 20px;
+    display: grid;
+    grid-template-columns: 100px 100px 100px 100px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    grid-auto-rows: 100px;
+}
+
+.grid-item-file-icon{
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+}
+.file-name{
+    margin-top: 0px;
+    align-self: start;
+    font-size: 16px;
+    letter-spacing: 0.1px;
+    margin-top: -15px;
+} 
 /* notepad save-button styling */
 #save-button{
     margin-top: 10px;

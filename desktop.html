@@ -3,6 +3,8 @@
     <head>
         <meta charset="UTF-8">
         <link rel="stylesheet" href="styles.css">
+        <script src="music-player.js" defer></script>
+        <script src="taskbar.js" defer></script>
         <script src="notepad.js" defer></script>
     </head>
     <body>
@@ -15,6 +17,7 @@
                     <div id="music-player-icon"><img src="img/music-player-icon.png" width="95px" height="80px"></div>
                     <div id="recipe-book-icon"><img src="img/recipe-book.png" width="95px" height="80px"></div>
                 </div>
+                <div id="clock"></div>
             </div>
             <!-- icon container on desktop screen -->
             <div class="icons-container-screen">
@@ -36,7 +39,41 @@
                 </div>
             </div>
 
-            <!-- notepad window -->
+            <!-- music player UI -->
+            <div id="music-player-window" class="window" style="width: 300px height: 250px">
+                <div class="window-bar">Music Player
+                    <div id="close-window-button">x</div>
+                </div>
+                
+                <div class="screen-container">
+                    <div id="screen" class="music-screen">
+                        <div id="song-title"></div>
+                    </div>
+                </div>
+
+                <div class="controls">
+                    <div id="play" class="play">play</div>
+                    <div id="stop" class="play">stop</div>
+                    <div id="next" class="next">next</div>
+                    <div id="back" class="back">back</div>
+                </div>
+            </div>
+
+            <!-- notes folder window -->
+            <div id="notes-folder-window" class="window">
+                <div class ="window-bar"> Notes Folder
+                    <div id="close-window-button">X</div>
+                </div>
+
+                <div id="notes-area-container">
+                    <div id="notes-area">
+                        <!-- populated dynamically by notepad.js -->
+                        </div>
+                    </div>
+
+        </div>
+        </div>
+                <!-- notepad window -->
             <div id="notepad-window" class="window">
                 <div class="window-bar">Notepad
                     <div id="close-window-button">x</div>
@@ -50,6 +87,5 @@
                     <button id="save-button">Save</button>
                 </div>
             </div>
-        </div>
     </body>
 </html>
