@@ -24,8 +24,8 @@ body{
 }
 .username{
     text-align: center;
-    margin-top: 20px;
-    font-size: 25px;
+    margin-top: 10px;
+    font-size: 30px;
     letter-spacing: 2px;
     color: white;
 }
@@ -45,7 +45,7 @@ body{
     
 }
 
-#hint-pass{
+#enter-btn,#hint-pass{
     border-style: solid;
     border-color: white;
     border-width: 1px;
@@ -102,7 +102,10 @@ body{
 #error-tab{
     background-color:red;
 }
-
+/* on hover hint message */
+#hint-pass:hover + #hint-box{
+    display:flex;
+}
 #error-box{ 
     width: 250px;
     height: 150px;
