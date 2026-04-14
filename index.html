@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="styles.css">
+        <title>Pixel Desk</title>
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <div class="background">
+            <div class="login-container">
+                <div class="cat"><img src="./img/cat.jpg" width ="230px" height ="240px"></div>
+                <div class="username"> CAT_OS User </div>
+                <div class="pass-container">
+                    <div class="pass-text">Password: 36 </div>
+                    <div><input id="pass" type="password" placeholder="Enter Password"></div>
+                    <div id="enter-btn" onclick="enterPass()">Enter</div>
+                    <div id="hint-pass">?</div>
+                    <div id="hint-box">
+                        <div class="tab-bar">HINT</div>
+                        <div class="hint-message">((2^3)+((2^2)*7))</div>
+                    </div>
+                </div>
+ 
+                <div id="error-box">
+                    <div class="tab-bar" style="background-color:red";>ERROR
+                        <div id="close-window-button" onclick="closeError()">x</div>
+                    </div>
+                    <div class="error-message">Invalid password<br>Try again</div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

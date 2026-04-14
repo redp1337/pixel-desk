@@ -1,4 +1,19 @@
 body{
+    background-color: lightslategray;
+    font-family: "pixel-desk";
+    overflow:hidden;
+}
+.background{
+    /* if we choose to add a picture for the background, this can be uncommented */
+    /* background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+    height: 100vh;
+    margin: 0;
+    justify-content: center;
+    align-items:center;
+}
     background-color:lightslategray;
     height: 100vh;
     overflow: hidden;
@@ -10,6 +25,121 @@ body{
     font-family: "pixel-desk";
     src: url("fonts/slkscr.ttf");
 }
+.cat{
+    display: flex;
+    justify-content: center;
+}
+.username{
+    text-align: center;
+    margin-top: 10px;
+    font-size: 30px;
+    letter-spacing: 2px;
+    color: white;
+}
+.pass-container{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-top: 15px;
+    align-items:center;
+    color: white;
+    gap: 10px;
+}
+.login-container{
+    margin-top: 15%;
+    display: flex; 
+    flex-direction: column;
+    
+}
+
+#enter-btn,#hint-pass{
+    border-style: solid;
+    border-color: white;
+    border-width: 1px;
+    padding: 4px;
+    background-color: gray;
+    border-radius: 5px;
+    font-weight: bolder;
+}
+#enter-btn:hover{
+    background-color: rgb(0, 142, 0);
+}
+#hint-pass:hover{
+    background-color: rgb(255, 216, 43);
+}
+
+#hint-box{
+    width: 250px;
+    height: 150px;
+    background-color: rgb(203, 203, 203);
+    border-style: solid;
+    border-color: rgb(143, 143, 143) rgb(143, 143, 143)  rgb(85, 85, 85) rgb(66, 66, 66);
+    display: flex;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:1054543;
+    flex-direction: column;
+    text-align: center;
+    display:none;
+}
+.tab-bar{
+    height: fit-content;
+    background-color: rgb(255, 216, 43);
+    padding: 4px 7px;
+    font-size: 20px;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:black;
+ 
+}
+.hint-message{
+    text-align: center;
+    margin-top:-10px;
+    font-size: 23px;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-grow:1;
+    color:black;
+}
+
+#error-tab{
+    background-color:red;
+}
+/* on hover hint message */
+#hint-pass:hover + #hint-box{
+    display:flex;
+}
+#error-box{ 
+    width: 250px;
+    height: 150px;
+    background-color: rgb(203, 203, 203);
+    border-style: solid;
+    border-color: rgb(143, 143, 143) rgb(143, 143, 143)  rgb(85, 85, 85) rgb(66, 66, 66);
+    position:absolute;
+    left:50%;
+    top:40%;
+    transform: translateX(-50%);
+    border-color: rgb(143, 143, 143) rgb(143, 143, 143)  rgb(85, 85, 85) rgb(66, 66, 66);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display:none;
+}
+
+
+.error-message{
+    text-align: center;
+    font-size: 20px;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-grow:1;
+}
+
 input{
     font-family: "pixel-desk";
 }
