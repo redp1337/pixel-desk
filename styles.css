@@ -13,12 +13,11 @@ body{
     margin: 0;
     justify-content: center;
     align-items:center;
-}
+
     background-color:lightslategray;
     height: 100vh;
     overflow: hidden;
     font-family: "pixel-desk";
-    font-family:"pixel-desk";
 }
 
 @font-face{
