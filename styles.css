@@ -54,7 +54,12 @@ body{
     border-radius: 5px;
     font-weight: bolder;
 }
-
+#enter-btn:hover{
+    background-color: rgb(0, 142, 0);
+}
+#hint-pass:hover{
+    background-color: rgb(255, 216, 43);
+}
 
 #hint-box{
     width: 250px;
@@ -62,24 +67,36 @@ body{
     background-color: rgb(203, 203, 203);
     border-style: solid;
     border-color: rgb(143, 143, 143) rgb(143, 143, 143)  rgb(85, 85, 85) rgb(66, 66, 66);
-    margin-left: 65%;
-    margin-top: 10px;
-
-
+    display: flex;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    z-index:1054543;
+    flex-direction: column;
+    text-align: center;
+    display:none;
 }
 .tab-bar{
     height: fit-content;
-    background-color: rgb(249, 212, 0);
+    background-color: rgb(255, 216, 43);
     padding: 4px 7px;
     font-size: 20px;
-
-
+    display:flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color:black;
+ 
 }
 .hint-message{
     text-align: center;
-    margin: 0;
-    font-size: 18px;
-   
+    margin-top:-10px;
+    font-size: 23px;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-grow:1;
+    color:black;
 }
 
 #error-tab{
@@ -92,24 +109,24 @@ body{
     background-color: rgb(203, 203, 203);
     border-style: solid;
     border-color: rgb(143, 143, 143) rgb(143, 143, 143)  rgb(85, 85, 85) rgb(66, 66, 66);
-    position: absolute;
-    top: 30vh; 
-    display: none;
-    animation: shake 0.4s;
+    position:absolute;
+    left:50%;
+    top:40%;
+    transform: translateX(-50%);
+    border-color: rgb(143, 143, 143) rgb(143, 143, 143)  rgb(85, 85, 85) rgb(66, 66, 66);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    display:none;
 }
 
-@keyframes shake {
-    0% { transform: translateX(0); }
-    20% { transform: translateX(-8px); }
-    40% { transform: translateX(8px); }
-    60% { transform: translateX(-8px); }
-    80% { transform: translateX(8px); }
-    100% { transform: translateX(0); }
-}
 
 .error-message{
     text-align: center;
-    margin: 0;
-    font-size: 18px;
+    font-size: 20px;
+    justify-content:center;
+    display:flex;
+    align-items:center;
+    flex-grow:1;
 }
 
