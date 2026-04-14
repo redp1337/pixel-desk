@@ -21,7 +21,11 @@ feature/music-player
 
 feature/recipe-book
 - user can view fun and tasty fruit recipes here
+
 ## Feature Demonstration
+Here is a GIF showing our feature, it has no audio so please go to our YouTube video below to listen to some music:
+![Phase2_Group7(1)](https://github.com/user-attachments/assets/dc341f70-45d2-49df-8a92-215fe79f6c31)
+
 Here is the link to the YouTube Video showing our features:
 https://youtu.be/J5yvXwCbyKo
 
