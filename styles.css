@@ -440,7 +440,7 @@ textarea{
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    background: white;
+    background: rgb(179, 179, 179);
 }
 #close-grape{
     border-color: black;
@@ -452,4 +452,18 @@ textarea{
 }
 .window-content {
     padding: 15px;
+    background-color: #ffffff;
+    border: 3px dotted #424242;
+}
+.sound-btn.next-btn{
+    font-family: "pixel-desk";
+    font-size: 18px;
+    float: right;
+
+}
+.sound-btn.next-btn:hover{
+    background-color: rgb(255, 182, 236);
+}
+h3{
+    text-align: center;
 }
