@@ -13,9 +13,9 @@
             <!-- icon container on taskbar -->
             <div class="taskbar">
                 <div class="icons-container-taskbar">
-                    <div id="notepad-icon"><img src="img/notepad.png" width="95px" height="80px"></div>
-                    <div id="notes-folder-icon"><img src="img/notes-folder-icon.png" width="95px" height="80px"></div>
-                    <div id="music-player-icon"><img src="img/music-player-icon.png" width="95px" height="80px"></div>
+                    <div id="notepad-icon-taskbar"><img src="img/notepad.png" width="95px" height="80px"></div>
+                    <div id="notes-folder-taskbar"><img src="img/notes-folder-icon.png" width="95px" height="80px"></div>
+                    <div id="music-player-taskbar"><img src="img/music-player-icon.png" width="95px" height="80px"></div>
                     <div id="recipe-book-taskbar"><img src="img/recipe-book.png" width="95px" height="80px"></div>
                 </div>
                 <div id="clock"></div>
@@ -23,15 +23,15 @@
             <!-- icon container on desktop screen -->
             <div class="icons-container-screen">
                 <div class ="icon-box">
-                    <div id="notepad-icon"><img src="./img/notepad.png" width="115px" height="105px"></div>
+                    <div id="notepad-icon-desktop"><img src="./img/notepad.png" width="115px" height="105px"></div>
                     <div class="icon-title">Notepad</div>
                 </div>
                 <div class="icon-box">
-                    <div id="notes-folder-icon"><img src="./img/notes-folder-icon.png" width="115px" height="105px"></div>
+                    <div id="notes-folder-icon-desktop"><img src="./img/notes-folder-icon.png" width="115px" height="105px"></div>
                     <div class="icon-title">Notes Folder</div>
                 </div>
                 <div class="icon-box">
-                    <div id="music-player-icon"><img src="./img/music-player-icon.png" width="115px" height="105px""></div>
+                    <div id="music-player-icon-desktop"><img src="./img/music-player-icon.png" width="115px" height="105px""></div>
                     <div class="icon-title">Music Player</div>
                 </div>
                 <div class="icon-box">
@@ -41,9 +41,9 @@
             </div>
 
             <!-- music player UI -->
-            <div id="music-player-window" class="window" style="width: 300px height: 250px">
+            <div id="music-player-window" class="window">
                 <div class="window-bar">Music Player
-                    <div id="close-window-button">x</div>
+                    <div class="close-window-button">x</div>
                 </div>
                 
                 <div class="screen-container">
@@ -63,7 +63,7 @@
             <!-- notes folder window -->
             <div id="notes-folder-window" class="window">
                 <div class ="window-bar"> Notes Folder
-                    <div id="close-window-button">X</div>
+                    <div class="close-window-button">X</div>
                 </div>
 
                 <div id="notes-area-container">
@@ -77,7 +77,7 @@
                 <!-- notepad window -->
             <div id="notepad-window" class="window" style="display:none">
                 <div class="window-bar">Notepad
-                    <div id="close-window-button">x</div>
+                    <div class="close-window-button">x</div>
                 </div>
                 <div class="content-container">
                     <div class="title-note-container">
