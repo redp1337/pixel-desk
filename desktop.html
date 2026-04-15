@@ -16,7 +16,7 @@
                     <div id="notepad-icon"><img src="img/notepad.png" width="95px" height="80px"></div>
                     <div id="notes-folder-icon"><img src="img/notes-folder-icon.png" width="95px" height="80px"></div>
                     <div id="music-player-icon"><img src="img/music-player-icon.png" width="95px" height="80px"></div>
-                    <div id="recipe-book-icon"><img src="img/recipe-book.png" width="95px" height="80px"></div>
+                    <div id="recipe-book-taskbar"><img src="img/recipe-book.png" width="95px" height="80px"></div>
                 </div>
                 <div id="clock"></div>
             </div>
@@ -35,7 +35,7 @@
                     <div class="icon-title">Music Player</div>
                 </div>
                 <div class="icon-box">
-                    <div id="recipe-book-icon"><img src="./img/recipe-book.png" width="115px" height="105px"></div>
+                    <div id="recipe-book-desktop"><img src="./img/recipe-book.png" width="115px" height="105px"></div>
                     <div class="icon-title">Recipe Book</div>
                 </div>
             </div>
@@ -75,7 +75,7 @@
         </div>
         </div>
                 <!-- notepad window -->
-            <div id="notepad-window" class="window">
+            <div id="notepad-window" class="window" style="display:none">
                 <div class="window-bar">Notepad
                     <div id="close-window-button">x</div>
                 </div>
@@ -90,13 +90,14 @@
             </div>
 
                  <!-- recipe window -->
-            <div id="grape-window" class="window">
+            <div id="grape-window" class="window" style="display:none;">
                 <div class="window-bar">
                     Recipe Book
                     <button id="close-grape">X</button>
                 </div>
                 <div class="window-content"></div>
             </div>
-
+            </div>
+        <audio id="click-sound" src="sounds/click.mp3"></audio>
     </body>
 </html>
