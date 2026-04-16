@@ -25,12 +25,6 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
    
-    if (closeBtn) {
-        closeBtn.addEventListener("click", function () {
-            recipeWindow.style.display = "none";
-            playSound();
-        });
-    }
 
 
 });
