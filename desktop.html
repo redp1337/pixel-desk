@@ -6,6 +6,7 @@
         <script src="music-player.js" defer></script>
         <script src="taskbar.js" defer></script>
         <script src="notepad.js" defer></script>
+        <script src="window-manager.js" defer></script>
         <script src="recipe-folder.js" defer></script>
     </head>
     <body>
@@ -31,7 +32,7 @@
                     <div class="icon-title">Notes Folder</div>
                 </div>
                 <div class="icon-box">
-                    <div id="music-player-icon-desktop"><img src="./img/music-player-icon.png" width="115px" height="105px""></div>
+                    <div id="music-player-icon-desktop"><img src="./img/music-player-icon.png" width="115px" height="105px"></div>
                     <div class="icon-title">Music Player</div>
                 </div>
                 <div class="icon-box">
@@ -75,7 +76,7 @@
         </div>
         </div>
                 <!-- notepad window -->
-            <div id="notepad-window" class="window" style="display:none">
+            <div id="notepad-window" class="window">
                 <div class="window-bar">Notepad
                     <div class="close-window-button">x</div>
                 </div>
@@ -90,10 +91,10 @@
             </div>
 
                  <!-- recipe window -->
-            <div id="grape-window" class="window" style="display:none;">
+            <div id="grape-window" class="window">
                 <div class="window-bar">
                     Recipe Book
-                    <button id="close-grape">X</button>
+                    <button class="close-window-button" id="close-grape">X</button>
                 </div>
                 <div class="window-content"></div>
             </div>
