@@ -184,6 +184,7 @@ input{
 .window{
     background-color:rgb(176, 176, 176);
     box-shadow: 10px 10px;
+    display:none;
 }
 
 .window-bar{
@@ -199,11 +200,12 @@ input{
     border-bottom: 1px solid black;
 }
 
-#close-window-button{
+.close-window-button{
     border-color: black;
     border-style: solid;
     border-width:1px;
     background-color: rgb(185, 185, 185);
+    cursor:pointer;
 }
 /* notepad-window styling  */
 #notepad-window{
@@ -466,4 +468,8 @@ textarea{
 }
 h3{
     text-align: center;
+}
+
+img{
+    cursor:pointer;
 }
