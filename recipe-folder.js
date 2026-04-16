@@ -2,9 +2,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
    
-    const recipeIconDesktop = document.getElementById("recipe-book-desktop");
-    const recipeIconTaskbar = document.getElementById("recipe-book-taskbar");
-
+  
 
    
     const recipeWindow = document.getElementById("grape-window");
@@ -23,30 +21,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
    
-    if (recipeIconDesktop) {
-        recipeIconDesktop.addEventListener("click", function () {
-            recipeWindow.style.display = "block";
-            playSound();
-        });
-    }
+
 
 
    
-    if (recipeIconTaskbar) {
-        recipeIconTaskbar.addEventListener("click", function () {
-            recipeWindow.style.display = "block";
-            playSound();
-        });
-    }
-
-
-   
-    if (closeBtn) {
-        closeBtn.addEventListener("click", function () {
-            recipeWindow.style.display = "none";
-            playSound();
-        });
-    }
 
 
 });
