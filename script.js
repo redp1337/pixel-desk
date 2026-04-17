@@ -28,3 +28,16 @@ function closeError(){
     document.getElementById('error-box').style.display='none';
 }
 
+document.getElementById("saveBtn").addEventListener("click", () => { 
+    playSound(sounds.save);
+} 
+
+document.getElementById("playBtn").addEventListener("click", () => { 
+    playSound(sound.play);  
+    document.getElementById("bgMusic").play(); 
+});
+
+    document.getElementById("pauseBtn").addEventListener("click", () => { 
+        playSound(sounds.pause); 
+        document.getElementById("bgMusic").pause(); 
+    });
