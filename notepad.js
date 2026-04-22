@@ -30,6 +30,14 @@ function renderNotesFolder() {
             <button class="delete-note-btn" data-index="${index}">✕</button>
         `;
 
+        // click note icon to reopen it in the notepad
+        item.addEventListener("click", (e) => {
+            if (e.target.classList.contains("delete-note-btn")) return;
+            document.querySelector("#title-note input").value = note.title;
+            document.querySelector("#content-note textarea").value = note.body;
+            document.getElementById("notepad-window").style.display = "block";
+        });
+
         // delete button, deletes note from localStorage and re renders
         item.querySelector(".delete-note-btn").addEventListener("click", (e) => {
             e.stopPropagation();
@@ -62,10 +70,34 @@ document.getElementById("save-button").addEventListener("click", () => {
     titleInput.value = "";
     bodyInput.value = "";
 
-    //checking if note made it to localStorage
+    // checking if note made it to localStorage
     console.log("Note saved to localStorage:", notes[notes.length - 1]);
+
     // updates the notes folder
     renderNotesFolder();
+});
+
+// open/close notepad and notes folder windows via icon clicks
+
+document.querySelectorAll("#notepad-icon, #notepad-icon-taskbar").forEach(el => {
+    el.addEventListener("click", () => {
+        document.getElementById("notepad-window").style.display = "block";
+    });
+});
+
+document.querySelectorAll("#notes-folder-icon, #notes-folder-icon-taskbar").forEach(el => {
+    el.addEventListener("click", () => {
+        document.getElementById("notes-folder-window").style.display = "block";
+        renderNotesFolder();
+    });
+});
+
+document.getElementById("close-notepad-button").addEventListener("click", () => {
+    document.getElementById("notepad-window").style.display = "none";
+});
+
+document.getElementById("close-notes-folder-button").addEventListener("click", () => {
+    document.getElementById("notes-folder-window").style.display = "none";
 });
 
 // Renders any notes already in localStorage
@@ -73,3 +105,4 @@ document.getElementById("save-button").addEventListener("click", () => {
 document.addEventListener("DOMContentLoaded", () => {
     renderNotesFolder();
 });
+
