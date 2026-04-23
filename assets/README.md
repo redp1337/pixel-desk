@@ -20,6 +20,10 @@ This project uses:
 - CSS
 - Javascript
 
+## Pictures
+<img width="1915" height="939" alt="Screenshot 2026-04-22 205836" src="https://github.com/user-attachments/assets/856162e1-5195-41e3-9bdf-540510d7369d" />
+<img width="1908" height="942" alt="Screenshot 2026-04-22 233737" src="https://github.com/user-attachments/assets/595a7346-e08d-423e-9742-37635956c067" />
+
 ## Features
 feature/login
 - login page with interactive password entry
