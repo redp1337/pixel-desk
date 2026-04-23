@@ -172,6 +172,8 @@ input{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 120px;
+    height: 140px;
 }
 
 .icon-title{
