@@ -45,6 +45,13 @@ document.addEventListener("click", (e)=>{
     const wind = btn.closest(".window");
     if (!wind) return;
     wind.style.display="none";
+
+    if (wind.id === "music-player-window") {
+        if (!songAudio.paused) {
+            songAudio.pause();
+        }
+        songAudio.currentTime = 0;
+    }
 });
 
 // z-index, if the user clicks the icon, it will bring it to the front
