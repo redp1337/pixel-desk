@@ -27,7 +27,9 @@ feature/login
 
 feature/desktop
 - desktop interface with icons
-- taskbar includes a functional clock in military time
+
+feature/taskbar-clock 
+- includes a functional clock in military time
 
 feature/notepad
 - user can create notes with a title and content
@@ -56,7 +58,7 @@ Here is a GIF showing our feature, it has no audio so please go to our YouTube v
 ![Phase2_Group7(1)](https://github.com/user-attachments/assets/dc341f70-45d2-49df-8a92-215fe79f6c31)
 
 Here is the link to the YouTube Video of our final presentation: 
-[![Watch the video](https://img.youtube.com/vi/-8GIztjkiKQ/0.jpg)](https://www.youtube.com/watch?v=-8GIztjkiKQ)
+[![Watch the video](https://img.youtube.com/vi/iSDQ7w1OpC8/0.jpg)](https://www.youtube.com/watch?v=iSDQ7w1OpC8)
 
 ## Team Members
 - Devon Fauchon
